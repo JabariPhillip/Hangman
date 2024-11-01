@@ -81,7 +81,7 @@ void isDuplicate(WORDS words[], WORDS dup[], int wordCount) {
 	
 }
 cout << endl << endl;
-cout << "Note: Repeated words have a higher chance of being choosen by the system. ";
+cout << "Note: Repeated words have a higher chance of being chosen by the system. ";
 }
 
 void printWords (WORDS words[], int wordCount){
@@ -160,7 +160,7 @@ void playHangman(string word) {
     int j = 0;
     WORDS w;
     infile >> w.data;
-    while (w.data != "ENDDATA") {
+    while (w.data != "ENDDATA" && j < numWords) {
         words[j].data = w.data;
         wordCount++;
         j++;
@@ -196,7 +196,7 @@ system ("pause");
 system("cls");
 
     for (int i = 0; i < wordCount; i++) {
-    	srand(time(0));
+    	srand(time(nullptr));
     	randomIndex = rand() % wordCount;
         playHangman(words[randomIndex].data);
         char choice;
