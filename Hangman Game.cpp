@@ -147,16 +147,6 @@ void playHangman(string word) {
 }
 
 
-
-
-
-//void printDup (WORDS dup[], int wordCount){
-//	for (int x=0; x<wordCount; x++){
-//		cout << dup[x].data;
-//	}
-//}
-
-
  int main() {
 	
     ifstream infile;
@@ -185,10 +175,6 @@ void playHangman(string word) {
 
     insertInPlace(words, wordCount);
 
-//printWords (words, wordCount);
-//cout << endl;
-//isDuplicate(words, dup, wordCount);
-//cout << endl;
 
 int randomIndex;
 
